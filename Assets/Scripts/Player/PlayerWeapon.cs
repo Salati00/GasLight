@@ -24,7 +24,7 @@ public class PlayerWeapon : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             ParticleEmitter.Emit(1);
         }
