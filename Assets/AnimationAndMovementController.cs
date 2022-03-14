@@ -33,7 +33,6 @@ public class AnimationAndMovementController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>(); 
 
-        input.CharacterControls.Move.started += context => { Debug.Log(context.ReadValue<Vector2>()); };
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunnning");
